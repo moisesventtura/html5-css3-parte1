@@ -1,0 +1,61 @@
+body {
+	
+}
+
+header {
+
+}
+
+#banner {
+	width: 100%;
+}
+
+.principal {
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+.tituloPrincipal {
+	padding-left: 20px;
+}
+
+.tituloCentralizado {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#missao { /* Indicando o identificador*/
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens { /*Indicação de classe. Serve para replicarmos a aplicação do nosso CSS sem precisar
+			copiar e colar em vários elementos*/
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px; /* Espaçamento interno de todos os lados*/
+}
+
+
+ul {
+	display: inline-block; /* As linhas da lista ficam em linha e bloquedas para que a imagem possa ficar ao seu lado alinhada*/
+	vertical-align: top; /* Alinhamento vertical da lista vai para o topo*/
+	width: 20%; 		/* Largura da Lista é de 20% da tela para a imagem*/
+	margin-right: 15%;  /* Margem externa a direita é de 5% da tela para a imagem*/
+}
+
+
+
+.imagemBeneficios {
+	width: 50%;
+}
+
