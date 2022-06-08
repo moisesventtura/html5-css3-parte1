@@ -1,61 +1,160 @@
-body {
-	
-}
-
 header {
-
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-#banner {
-	width: 100%;
+.caixa {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
 
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
 }
 
-.tituloPrincipal {
-	padding-left: 20px;
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-.tituloCentralizado {
+/*O Hover só é usado quando eu quero indicar que o mouse está por cima do elemento*/
+nav a:hover {  
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width:  940px;
+	margin:  0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display:  inline-block;
 	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px; /*Primeiro Altura depois Laterais 30x20 */
+	box-sizing: border-box; /*Esse elemento vai diferenciar as larguras da lista entre o seu tamanho em relação a página e o seu espaçamento interno. Caso não seja colocado essa configuração, o CSS vai somar as larguras aumentando o tamanho do elemento*/
+	border: 2px solid #000000; /*Configuração de borda respectivamente: tamanho da linha, tipo da borda e cor */
+	border-radius: 10px;
 }
 
-p {
+/*O Hover só é usado quando eu quero indicar que o mouse está por cima do elemento*/
+.produtos li:hover { 
+	border-color: #C78C19;
+}
+
+/*O Active só é usado quando eu quero indicar que o mouse está com o clique pressionado*/
+.produtos li:active { 
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
 	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
 }
 
-#missao { /* Indicando o identificador*/
-	font-size: 20px
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
 
-em strong {
-	color: #FF0000;
+/*Páginda do Contato */
+main {
+	width: 940px;
+	margin: 0 auto;
 }
 
-.itens { /*Indicação de classe. Serve para replicarmos a aplicação do nosso CSS sem precisar
-			copiar e colar em vários elementos*/
-	font-style: italic;
+form {
+	margin: 40px 0; 
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px; /* Espaçamento interno de todos os lados*/
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+
 }
 
-
-ul {
-	display: inline-block; /* As linhas da lista ficam em linha e bloquedas para que a imagem possa ficar ao seu lado alinhada*/
-	vertical-align: top; /* Alinhamento vertical da lista vai para o topo*/
-	width: 20%; 		/* Largura da Lista é de 20% da tela para a imagem*/
-	margin-right: 15%;  /* Margem externa a direita é de 5% da tela para a imagem*/
-}
-
-
-
-.imagemBeneficios {
+.input-padrao { 
+	display:  block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
 	width: 50%;
 }
 
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	border: none;
+	border-radius: 5px;
+	color:  white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 1s all;
+	cursor: pointer;
+
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+	/*transform: rotate(360deg);*/
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+.tabela:hover {
+	transform: scale(1.5);
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
